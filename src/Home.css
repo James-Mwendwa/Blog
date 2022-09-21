@@ -11,8 +11,9 @@
 .homeCard {
     background-color: #fff;
     height: auto;
-    margin-top: 20px;
+    margin-top: 5px;
     padding: 20px;
+
 }
 
 .homeCard > h2 {
