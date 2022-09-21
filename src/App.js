@@ -1,3 +1,4 @@
+import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./About";
 import Header from "./Header";
@@ -13,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<Create />} />
+          <Route path="/create" element={<Create />} />
         </Routes>
         <Footer />
       </BrowserRouter>

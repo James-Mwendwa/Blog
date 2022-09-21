@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-size: 20px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    height: auto;
+}
+
+.footer > p {
+    margin-top: 50px;
+}

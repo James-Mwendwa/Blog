@@ -3,8 +3,15 @@ import "./Create.css";
 
 function Create() {
   return (
-    <div>
-      <h2>Create Page</h2>
+    <div className="create">
+      <div className="createTitle">
+        <form>
+          <input type="text" placeholder="Article title.." />
+          <div className="underline"></div>
+          <textarea placeholder="Tell your story.." />
+          <button>Publish</button>
+        </form>
+      </div>
     </div>
   );
 }

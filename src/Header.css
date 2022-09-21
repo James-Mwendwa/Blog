@@ -2,8 +2,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0 30px;    
+    flex-wrap: wrap; 
+    border-bottom: 3px solid #f3f3f3;  
+    background-color: #fff;
+}
+
+.header-logo {
+    margin: 20px 30px;
 }
 
 .header-logo > a {
@@ -18,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-   
+    margin: 20px 20px;   
 }
 
 .navbar > a {
@@ -26,9 +31,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 16px;
+    font-size: 20px;
     color: black;
     margin-left: 80px;
     cursor: pointer;
 }
 
+.navbar > a:hover {
+ color: blue;
+}

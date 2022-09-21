@@ -1,0 +1,25 @@
+.home {
+    height: auto;
+    background-color: #f3f3f3;
+    align-items: center;
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 200px;
+    flex: 1;
+}
+
+.homeCard {
+    background-color: #fff;
+    height: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.homeCard > h2 {
+    font-size: 28px;
+}
+
+.homeCard > p {
+    font-size: 18px;
+    margin-top: 20px;
+}
