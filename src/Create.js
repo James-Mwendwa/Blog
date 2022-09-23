@@ -7,8 +7,8 @@ function Create() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTitle(title);
-    alert(`form submitted ${title}`);
+    const blog = { title, body };
+    console.log(blog);
   };
 
   return (
@@ -18,12 +18,14 @@ function Create() {
           <input
             type="text"
             placeholder="Article title.."
+            required
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
           <div className="underline"></div>
           <textarea
             placeholder="Tell your story.."
+            required
             value={body}
             onChange={(e) => setBody(e.target.value)}
           />
