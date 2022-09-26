@@ -1,14 +1,26 @@
 import React, { useState } from "react";
 import "./Create.css";
+import { useNavigate } from "react-router-dom";
 
 function Create() {
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
+  const history = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const blog = { title, body };
     console.log(blog);
+
+    fetch("http://localhost:8000/blogs/", {
+      method: "POST",
+      body: JSON.stringify(blog),
+      header: {
+        "Content-type": "application/json",
+      },
+    }).then(() => {
+      history("/");
+    });
   };
 
   return (

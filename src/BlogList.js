@@ -1,6 +1,4 @@
-import React from "react";
-
-function BlogList({ blogs }) {
+function BlogList({ blogs, handleDelete }) {
   return (
     <div>
       {blogs.map((blog) => {
@@ -9,6 +7,7 @@ function BlogList({ blogs }) {
             <h1>The author is {blog.author}</h1>
             <h2>{blog.title}</h2>
             <p>{blog.body}</p>
+            <button onClick={handleDelete}>Delete</button>
           </div>
         );
       })}
